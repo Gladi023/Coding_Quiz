@@ -15,15 +15,36 @@
       <p>Test yourself</p>
       <p>This Coding quiz will test your Javascript knowledge</p>
     </header>
+
+    <div class="wrap">
+        <div id="begin" class="begin">
+          <p>
+            Answering the questionsthe fastest will ganer a higer score,
+            wrong answers will cost a 15 second penalty.
+          </p>
+          <button id="start" class="start">Begin Quiz Now!</button>
+        </div>
+  
+        <div id="questions" class="hide">
+          <div class="timer">Time: <span id="time">0</span></div>
+          <h2 id="question-tiles"></h2>
+          <div id="choices" class="choices"></div>
+        </div>
+  
+        <div id="end" class="hide">
+          <div class="scores"><a href="score.html">View the Highest scores</a></div>
+          <h2>Finished</h2>
+          <p>Your ultimate score is <span id="ultimate-score"></span>.</p>
+          <p>
+            Enter your initials here: <input type="text" id="initials" max="3" />
+            <button id="submit">Submit</button>
+          </p>
+        </div>
+  
+        <div id="feedback" class="feedback hide"></div>
+      </div>
+  
+    <script src="questions.js"></script>
     <script src="script.js"></script>
 </body>
-<footer>
-    <div class="base-timer">
-        <svg class="base-timer__svg" viewBox="0 0 100 100">
-          <g class="base-timer__circle">
-            <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45" />
-          </g>
-          </svg>
-      </div>
-</footer>
 </html>
